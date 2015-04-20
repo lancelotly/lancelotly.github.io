@@ -29,6 +29,6 @@ FEED_ATOM = 'feed/atom/index.html'
 #PLUGINS = ['sitemap', 'neighbors', 'related_posts']
 #RELATED_POSTS_MAX = 3
 
-THEME = 'simple'
+THEME = 'zurb-F5-basic'
 
 DESCRIPTION = """Here I'm searching the fantastic nature of our world."""

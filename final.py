@@ -1,6 +1,6 @@
 AUTHOR = 'lancelotly'
 SITENAME = u'Lancelot\xb7Sirius\xb7ly'
-SITEURL = 'http://lancelotly.me.ly'
+SITEURL = 'http://lancelotly.ml'
 
 #TEMPLATE_PAGES = {'blog.html': 'blog.html'}
 #STATIC_PATHS = ['images']

@@ -28,4 +28,4 @@ FEED_ATOM = 'feed/atom/index.html'
 
 DEFAULT_PAGINATION = 9
 THEME = 'svbhack'
-TAGLINE = """Here I'm searching the fantastic nature of our world.&nbsp &nbsp &nbsp &nbsp &nbsp"""
+TAGLINE = """Here I'm searching the fantastic nature of our world."""

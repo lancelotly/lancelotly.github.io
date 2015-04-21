@@ -128,7 +128,8 @@ main div#ending_message {
   color: #999999;
   font-size: 10px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) 
+{
   aside {
     width: 25%;
     height: 100%;
@@ -162,3 +163,33 @@ main div#ending_message {
     border-top: 0;
   }
 }
+
+.social {
+		float: left;
+		width: 100px;
+	}
+
+div[class='social'] a {
+		background-repeat: no-repeat;
+		background-position: center-center;
+		padding-left: 2px;
+	}
+/* Icons */
+.social a[href*='twitter.com'] {background-image: url('http://i.imgur.com/cJuH7cL.png');}	
+.social a[href*='weibo.com'] {background-image: url('http://i.imgur.com/LgUm2IJ.png');}
+.social a[href*='mailto:'] {background-image: url('http://i.imgur.com/QbLryMm.png');}
+
+.back-top { position: fixed; bottom: 100px; margin-left: 20px; }
+.back-top a {
+    text-decoration: none;
+    text-align: center;
+    padding-top: 8px;
+    font-size: 28px;
+    width: 30px;
+    height: 40px;
+    display: block;
+    background-color: #555;
+    color: white;
+    -webkit-transition: 1s ease; -moz-transition: 1s ease; -o-transition: 1s ease; transition: 1s ease;
+}
+.back-top a:hover { background-color: #f1f1f1; color: #ab0103;}

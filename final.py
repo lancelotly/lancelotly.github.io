@@ -26,5 +26,6 @@ FEED_ATOM = 'feed/atom/index.html'
 #PLUGINS = ['sitemap', 'neighbors', 'related_posts']
 #RELATED_POSTS_MAX = 3
 
+DEFAULT_PAGINATION = 9
 THEME = 'svbhack'
-TAGLINE = """Here I'm searching the fantastic nature of our world."""
+TAGLINE = """Here I'm searching the fantastic nature of our world.&nbsp &nbsp &nbsp &nbsp &nbsp"""

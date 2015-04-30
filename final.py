@@ -1,15 +1,15 @@
 AUTHOR = 'lancelotly'
 SITENAME = u'Lancelot\xb7Sirius\xb7ly'
-SITEURL = 'https://lancelotly.github.io'
+SITEURL = 'http://localhost:8000'
 
 GOOGLE_ANALYTICS='UA-57996371-5'
 TIMEZONE = 'Asia/Shanghai'
 DEFAULT_LANG = u'zh'
 
-SOCIAL = (('twitter', 'http://twitter.com/lancelotly'),
+SOCIAL = (('tumblr', 'http://lancelotly.tumblr.com'),
           #('github', ''),
-          ('weibo', 'http://weibo.com/lancelotly'),
-          ('contact', 'mailto:nmqsly_b@126.com'),
+          ('weibo', 'http://weibo.com/345259978'),
+          ('contact', 'mailto:nmqsly@126.com'),
          )
 FEED_RSS = 'feed/index.html'
 FEED_ATOM = 'feed/atom/index.html'

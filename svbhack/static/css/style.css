@@ -178,6 +178,7 @@ div[class='social'] a {
 .social a[href*='twitter.com'] {background-image: url('http://i.imgur.com/cJuH7cL.png');}	
 .social a[href*='weibo.com'] {background-image: url('http://i.imgur.com/LgUm2IJ.png');}
 .social a[href*='mailto:'] {background-image: url('http://i.imgur.com/QbLryMm.png');}
+.social a[href*='tumblr.com'] {background-image: url('http://i.imgur.com/oPXr8Kx.png');}
 
 .back-top { position: fixed; bottom: 100px; margin-left: 20px; }
 .back-top a {

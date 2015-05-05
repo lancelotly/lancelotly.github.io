@@ -27,4 +27,4 @@ ARTICLE_SAVE_AS = "{date:%Y}/{date:%m}/{slug}/index.html"
 
 DEFAULT_PAGINATION = 9
 THEME = 'svbhack'
-TAGLINE = """Here I'm searching the fantastic nature of our world.""
+TAGLINE = """Here I'm searching the fantastic nature of our world."""

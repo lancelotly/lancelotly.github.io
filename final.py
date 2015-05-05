@@ -8,7 +8,7 @@ DEFAULT_LANG = u'zh'
 
 SOCIAL = (('tumblr', 'http://lancelotly.tumblr.com'),
           #('github', ''),
-          ('weibo', 'http://weibo.com/345259978'),
+          ('weibo', 'http://weibo.com/lancelotly'),
           ('contact', 'mailto:nmqsly@126.com'),
          )
 FEED_RSS = 'feed/index.html'
@@ -19,13 +19,12 @@ FEED_ATOM = 'feed/atom/index.html'
 
 #DEFAULT_DATE_FORMAT = ('%d/%b/%Y %a')
 
-#ARTICLE_URL = "{date:%Y}/{date:%m}/{slug}/"
-#ARTICLE_SAVE_AS = "{date:%Y}/{date:%m}/{slug}/index.html"
+ARTICLE_URL = "{date:%Y}/{date:%m}/{slug}/"
+ARTICLE_SAVE_AS = "{date:%Y}/{date:%m}/{slug}/index.html"
 
-#PLUGIN_PATH = 'plugins'
-#PLUGINS = ['sitemap', 'neighbors', 'related_posts']
-#RELATED_POSTS_MAX = 3
+#PLUGIN_PATHS = ['plugins']
+#PLUGINS = [u'pelican_comment_system']
 
 DEFAULT_PAGINATION = 9
 THEME = 'svbhack'
-TAGLINE = """Here I'm searching the fantastic nature of our world."""
+TAGLINE = """Here I'm searching the fantastic nature of our world.""

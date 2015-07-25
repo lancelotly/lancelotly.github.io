@@ -29,5 +29,5 @@ DEFAULT_PAGINATION = 5
 THEME = 'svbhack'
 TAGLINE = """Here I'm searching the fantastic nature of our world."""
 USER_LOGO_URL = 'https://bitly.com/1TZR48Y'
-BACK_TO_TOP = 'https://bitly.com/1Jmm93v'
+BACK_TO_TOP = 'https://hime.io/images/2015/07/25/5544680327454954.gif'
 SUMMARY_MAX_LENGTH = 30

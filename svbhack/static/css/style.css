@@ -184,10 +184,9 @@ div[class='social'] a {
 		padding-left: 2px;
 	}
 /* Icons */
-.social a[href*='twitter.com'] {background-image: url('https://bitly.com/1JFHctD');}	
-.social a[href*='weibo.com'] {background-image: url('https://bitly.com/1gc7jBu');}
-.social a[href*='mailto:'] {background-image: url('https://bitly.com/1MP8AZn');}
-.social a[href*='tumblr.com'] {background-image: url('https://bitly.com/1I1n8S8');}
+.social a[href*='tumblr.com'] {background-image: url('https://bitly.com/1I1A0YE'); background-size: 30px 29px;}
+.social a[href*='weibo.com'] {background-image: url('https://bitly.com/1SIeDAE'); background-size: 30px 30px; }
+.social a[href*='mailto:'] {background-image: url('https://bitly.com/1IoURZs'); background-size: 30px 25px;}
 
 .back-top { position: fixed; bottom: 100px; margin-left: 20px; }
 .back-top a {

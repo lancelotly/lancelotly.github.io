@@ -10,7 +10,7 @@
 
 人越长大，越复杂，交朋友的难度和成本都在极度上升。
 
-.. image:: http://t.cn/RAnGg31
+.. image:: https://bitly.com/1SHXRS7
 		:align: center
 		:alt: best time
 		

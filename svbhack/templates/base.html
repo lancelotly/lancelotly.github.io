@@ -2,16 +2,8 @@
 <html lang="{{ DEFAULT_LANG }}">
 	
 <head>
-  <!-- ## for client-side less
-  <link rel="stylesheet/less" type="text/css" href="{{ SITEURL }}/theme/css/style.less">
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/less.js/1.7.3/less.min.js" type="text/javascript"></script>
-  -->
-	<script type="text/javascript">
-		var host = "lancelotly.ml";
-		if ((host == window.location.host) && (window.location.protocol != "https:"))
-			window.location.protocol = "https";
-	</script>
-  <link rel="shortcut icon" type="image/png" href="http://t.cn/RABHOWd"/>
+
+  <link rel="shortcut icon" type="image/png" href="{{ USER_LOGO_URL }}">
   <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/style.css">
   <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/pygments.css">
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=PT+Sans|PT+Serif|PT+Mono">
@@ -37,6 +29,15 @@
   </title>
 
   {% include "modules/analytics.html" %}
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	
+	ga('create', 'UA-57996371-5', 'auto');
+	ga('send', 'pageview');
+	</script>
 </head>
 
 <body>
@@ -44,7 +45,7 @@
     <div id="user_meta">
       
         {% if USER_LOGO_URL %}
-        <!-- img src="{{ USER_LOGO_URL }}" alt="logo"-->
+        
 	<div class="logo" style="background-image: url({{ USER_LOGO_URL }});"></div>
 	<p> </p>
         {% else %}
@@ -100,16 +101,6 @@
       <p><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">All</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName"><font color="#4169E1">lancelotly</font></span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>. 
       <p>Proudly powered by <a href="http://getpelican.com" target="_blank">Pelican</a> and <a href="https://github.com" target="_blank">Github</a>. Theme origin from <a href="https://github.com/gfidente/pelican-svbhack" target="_blank">Giulio Fidente</a>, and modified by <a href="https://github.com/lancelotly" target="_blank">{{ AUTHOR }}</a>.
     </div>
-	<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-57996371-5', 'auto');
-  ga('send', 'pageview');
-
-	</script>
   </main>
   {% include "modules/idl.html" %}
 </body>

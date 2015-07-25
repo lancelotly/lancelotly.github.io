@@ -8,5 +8,3 @@ Test 001
 :slug: test 01
 
 Hello World! XD
-
-Test LOL!

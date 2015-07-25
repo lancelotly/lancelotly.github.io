@@ -82,7 +82,7 @@ main article div.article_text code {
   padding: 0;
   color: #000000;
   font-size: 14px;
-  font-family: 'PT Mono', monospace;
+  font-family: 'PT Mono', monospace, Verdana, Geneva, sans-serif, "Microsoft Yahei";
   background: #eeeeee;
 }
 main article div.article_text pre {
@@ -91,7 +91,7 @@ main article div.article_text pre {
   color: #000000;
   border-left: 3px solid #0e94ec;
   font-size: 14px;
-  font-family: 'PT Mono', monospace;
+  font-family: 'PT Mono', monospace, Verdana, Geneva, sans-serif, "Microsoft Yahei";
   background: #eeeeee;
   line-height: 1.125em;
   overflow-x: auto;
@@ -184,10 +184,10 @@ div[class='social'] a {
 		padding-left: 2px;
 	}
 /* Icons */
-.social a[href*='twitter.com'] {background-image: url('http://i.imgur.com/cJuH7cL.png');}	
-.social a[href*='weibo.com'] {background-image: url('http://i.imgur.com/LgUm2IJ.png');}
-.social a[href*='mailto:'] {background-image: url('http://i.imgur.com/QbLryMm.png');}
-.social a[href*='tumblr.com'] {background-image: url('http://i.imgur.com/oPXr8Kx.png');}
+.social a[href*='twitter.com'] {background-image: url('https://bitly.com/1JFHctD');}	
+.social a[href*='weibo.com'] {background-image: url('https://bitly.com/1gc7jBu');}
+.social a[href*='mailto:'] {background-image: url('https://bitly.com/1MP8AZn');}
+.social a[href*='tumblr.com'] {background-image: url('https://bitly.com/1I1n8S8');}
 
 .back-top { position: fixed; bottom: 100px; margin-left: 20px; }
 .back-top a {

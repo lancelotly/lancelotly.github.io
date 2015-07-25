@@ -2,7 +2,7 @@ AUTHOR = 'lancelotly'
 SITENAME = u'Lancelot\xb7Sirius\xb7ly'
 SITEURL = 'https://lancelotly.github.io'
 
-GOOGLE_ANALYTICS='UA-57996371-5'
+#GOOGLE_ANALYTICS='UA-57996371-5'
 TIMEZONE = 'Asia/Shanghai'
 DEFAULT_LANG = u'zh'
 
@@ -28,5 +28,6 @@ ARTICLE_SAVE_AS = "{date:%Y}/{date:%c}/index.html"
 DEFAULT_PAGINATION = 5
 THEME = 'svbhack'
 TAGLINE = """Here I'm searching the fantastic nature of our world."""
-USER_LOGO_URL = 'http://t.cn/RABHOWd'
+USER_LOGO_URL = 'https://bitly.com/1TZR48Y'
+BACK_TO_TOP = 'https://bitly.com/1Jmm93v'
 SUMMARY_MAX_LENGTH = 30

@@ -19,12 +19,14 @@ FEED_ATOM = 'feed/atom/index.html'
 
 #DEFAULT_DATE_FORMAT = ('%d/%b/%Y %a')
 
-ARTICLE_URL = "{date:%Y}/{date:%m}/{slug}/"
-ARTICLE_SAVE_AS = "{date:%Y}/{date:%m}/{slug}/index.html"
+ARTICLE_URL = "{date:%Y}/{date:%c}/"
+ARTICLE_SAVE_AS = "{date:%Y}/{date:%c}/index.html"
 
 #PLUGIN_PATHS = ['plugins']
 #PLUGINS = [u'pelican_comment_system']
 
-DEFAULT_PAGINATION = 9
+DEFAULT_PAGINATION = 5
 THEME = 'svbhack'
 TAGLINE = """Here I'm searching the fantastic nature of our world."""
+USER_LOGO_URL = 'http://t.cn/RABHOWd'
+SUMMARY_MAX_LENGTH = 30

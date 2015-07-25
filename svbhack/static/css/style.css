@@ -3,10 +3,7 @@ body {
   padding: 0;
   background-color: #ffffff;
   color: #4d4d4d;
-  font-family: 'PT Sans', sans-serif;
-  font-size: 18px;
-}
-a {
+  font-family: Verdana, Geneva, sans-serif, "Microsoft Yahei";
   color: #000000;
   text-decoration: none;
 }
@@ -23,12 +20,24 @@ aside div#user_meta {
   padding: 40px;
   text-align: center;
 }
+aside div#user_meta .logo
+	{
+		display: block;
+		background-size: 100%;
+		background-repeat: no-repeat;
+		background-position: center;
+		margin: 0 50%;
+		width: 120px;
+		height: 120px;
+	}
 aside div#user_meta h2 {
   margin: 15px 0 5px 0;
+  
 }
 aside div#user_meta p {
   margin: 0 0 15px 0;
-  font-size: 14px;
+  font-size: 12px;
+  width: 100%;
 }
 aside div#user_meta ul {
   margin: 40px 0 0 0;

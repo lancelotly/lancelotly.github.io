@@ -1,6 +1,6 @@
 AUTHOR = 'lancelotly'
 SITENAME = u'Lancelot\xb7Sirius\xb7ly'
-SITEURL = 'https://lancelotly.github.io'
+SITEURL = 'https://lancelotly.ml'
 
 #GOOGLE_ANALYTICS='UA-57996371-5'
 TIMEZONE = 'Asia/Shanghai'

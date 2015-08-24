@@ -185,8 +185,8 @@ div[class='social'] a {
 	}
 /* Icons */
 .social a[href*='tumblr.com'] {background-image: url('https://bitly.com/1I1A0YE'); background-size: 30px 29px;}
-.social a[href*='weibo.com'] {background-image: url('http://bitly.com/1JetLBd'); background-size: 30px 30px; }
-.social a[href*='mailto:'] {background-image: url('http://bitly.com/1LuN1Aq'); background-size: 30px 25px;}
+.social a[href*='weibo.com'] {background-image: url('https://bitly.com/1JetLBd'); background-size: 30px 30px; }
+.social a[href*='mailto:'] {background-image: url('https://bitly.com/1LuN1Aq'); background-size: 30px 25px;}
 
 .back-top { position: fixed; bottom: 100px; margin-left: 20px; }
 .back-top a {

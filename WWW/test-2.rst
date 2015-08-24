@@ -12,8 +12,8 @@
 
 .. raw:: html
 
-	<div style="background-image: url(http://bitly.com/1SHXRS7); background-repeat: no-repeat;">
-	<img alt="best time" src="http://bitly.com/1SHXRS7" style="visibility:hidden"/>
+	<div style="background-image: url(https://bitly.com/1SHXRS7); background-repeat: no-repeat;">
+	<img alt="best time" src="https://bitly.com/1SHXRS7" style="visibility:hidden"/>
 	</div>
 
 *@lancelotly*

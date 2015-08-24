@@ -1,0 +1,33 @@
+==============================================
+新学期
+==============================================
+
+:date: 2015-08-22 21:00
+:tags: caprice
+:category: ESSAY
+:slug: 20150822
+:author: lancelotly
+
+开学一周啦～新学期会有新的生活开始。不一样的内容，好期待。
+
+暑假里总算是把盗墓笔记和心理罪（雷米）全集看完了，感觉棒棒哒！有时候，这样的时光并不是会很多。还记得刚放假时候去 Chicago 好朋友那里玩的情景。一路上风景虽然非常之多，但每一处在之后的日子里细细回味，都会有更多的细节催动泪腺而激动不已。
+
+博客应用：直接用 Raw:: html 插入。例如：下面的 Spotify 链接即直接插入，感觉有时候超方便～
+
+.. code:: ReST
+
+	.. raw:: html
+
+		<iframe src="https://embed.spotify.com/?uri=
+		spotify:track:28rZxBE8j62gTFaInWXbDZ" 
+		frameborder="0" allowtransparency="true" width="500" 
+		height="580"></iframe>
+		
+
+嗯，这首电音感觉不错，引用之：
+
+.. raw:: html
+
+	<iframe src="https://embed.spotify.com/?uri=spotify:track:28rZxBE8j62gTFaInWXbDZ" frameborder="0" allowtransparency="true" width="500" height="580"></iframe>
+	
+

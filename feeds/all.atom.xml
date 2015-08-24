@@ -1,9 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Lancelot·Sirius·ly</title><link href="https://lancelotly.ml/" rel="alternate"></link><link href="https://lancelotly.ml/feeds/all.atom.xml" rel="self"></link><id>https://lancelotly.ml/</id><updated>2015-05-03T19:00:00+08:00</updated><entry><title>Moving My New Blog —— 静态独立博客</title><link href="https://lancelotly.ml/2015/Sun%2003%20May%202015%2003:00:00%20PM%20MST/" rel="alternate"></link><updated>2015-05-03T15:00:00+08:00</updated><author><name>lancelotly</name></author><id>tag:lancelotly.ml,2015-05-03:2015/Sun 03 May 2015 03:00:00 PM MST/</id><summary type="html">&lt;p&gt;搭了自己的新博客，总是要先写些什么！&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Lancelot·Sirius·ly</title><link href="https://lancelotly.ml/" rel="alternate"></link><link href="https://lancelotly.ml/feeds/all.atom.xml" rel="self"></link><id>https://lancelotly.ml/</id><updated>2015-08-22T21:00:00+08:00</updated><entry><title>新学期</title><link href="https://lancelotly.ml/2015/Sat%2022%20Aug%202015%2009:00:00%20PM%20MST/" rel="alternate"></link><updated>2015-08-22T21:00:00+08:00</updated><author><name>lancelotly</name></author><id>tag:lancelotly.ml,2015-08-22:2015/Sat 22 Aug 2015 09:00:00 PM MST/</id><summary type="html">&lt;p&gt;开学一周啦～新学期会有新的生活开始。不一样的内容，好期待。&lt;/p&gt;
+&lt;p&gt;暑假里总算是把盗墓笔记和心理罪（雷米）全集看完了，感觉棒棒哒！有时候，这样的时光并不是会很多。还记得刚放假时候去 Chicago 好朋友那里玩的情景。一路上风景虽然非常之多，但每一处在之后的日子里细细回味，都会有更多的细节催动泪腺而激动不已。&lt;/p&gt;
+&lt;p&gt;博客应用：直接用 Raw:: html 插入。例如：下面的 Spotify 链接即直接插入，感觉有时候超方便～&lt;/p&gt;
+&lt;pre class="code ReST literal-block"&gt;
+&lt;span class="p"&gt;..&lt;/span&gt; &lt;span class="ow"&gt;raw&lt;/span&gt;&lt;span class="p"&gt;::&lt;/span&gt; html
+
+        &amp;lt;iframe src=&amp;quot;https://embed.spotify.com/?uri=
+        spotify:track:28rZxBE8j62gTFaInWXbDZ&amp;quot;
+        frameborder=&amp;quot;0&amp;quot; allowtransparency=&amp;quot;true&amp;quot; width=&amp;quot;500&amp;quot;
+        height=&amp;quot;580&amp;quot;&amp;gt;&amp;lt;/iframe&amp;gt;
+&lt;/pre&gt;
+&lt;p&gt;嗯，这首电音感觉不错，引用之：&lt;/p&gt;
+&lt;iframe src="https://embed.spotify.com/?uri=spotify:track:28rZxBE8j62gTFaInWXbDZ" frameborder="0" allowtransparency="true" width="500" height="580"&gt;&lt;/iframe&gt;</summary><category term="caprice"></category></entry><entry><title>Moving My New Blog —— 静态独立博客</title><link href="https://lancelotly.ml/2015/Sun%2003%20May%202015%2003:00:00%20PM%20MST/" rel="alternate"></link><updated>2015-05-03T15:00:00+08:00</updated><author><name>lancelotly</name></author><id>tag:lancelotly.ml,2015-05-03:2015/Sun 03 May 2015 03:00:00 PM MST/</id><summary type="html">&lt;p&gt;搭了自己的新博客，总是要先写些什么！&lt;/p&gt;
 &lt;p&gt;嗯……&lt;/p&gt;
 </summary><category term="caprice"></category></entry><entry><title>回忆是时光里带着温暖的余烬</title><link href="https://lancelotly.ml/2015/Sun%2019%20Apr%202015%2007:00:00%20PM%20MST/" rel="alternate"></link><updated>2015-05-03T19:00:00+08:00</updated><author><name>lancelotly</name></author><id>tag:lancelotly.ml,2015-04-19:2015/Sun 19 Apr 2015 07:00:00 PM MST/</id><summary type="html">&lt;p&gt;人越长大，越复杂，交朋友的难度和成本都在极度上升。&lt;/p&gt;
-&lt;img alt="best time" class="align-center" src="https://bitly.com/1SHXRS7" /&gt;
-&lt;p&gt;&lt;em&gt;&amp;#64;lancelotly&lt;/em&gt;
+&lt;div style="background-image: url(http://bitly.com/1SHXRS7); background-repeat: no-repeat;"&gt;
+&lt;img alt="best time" src="http://bitly.com/1SHXRS7" style="visibility:hidden"/&gt;
+&lt;/div&gt;&lt;p&gt;&lt;em&gt;&amp;#64;lancelotly&lt;/em&gt;
 :)&lt;/p&gt;
 </summary><category term="test"></category></entry><entry><title>Test 001</title><link href="https://lancelotly.ml/2015/Sun%2019%20Apr%202015%2006:00:00%20PM%20MST/" rel="alternate"></link><updated>2015-04-19T18:00:00+08:00</updated><author><name>lancelotly</name></author><id>tag:lancelotly.ml,2015-04-19:2015/Sun 19 Apr 2015 06:00:00 PM MST/</id><summary type="html">&lt;p&gt;Hello World! XD&lt;/p&gt;
 </summary><category term="test"></category></entry></feed>

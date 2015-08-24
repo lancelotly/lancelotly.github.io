@@ -13,9 +13,9 @@ hr {
   height: 1px;
   border: none;
 }
-img {
+/*img {
   max-width: 50%;
-}
+}*/
 aside div#user_meta {
   padding: 40px;
   text-align: center;
@@ -72,7 +72,7 @@ main article {
   padding: 40px;
 }
 main article div.article_text {
-  line-height: 1.375em;
+  line-height: 1.8em;
 }
 main article div.article_text a {
   text-decoration: underline;
@@ -94,7 +94,7 @@ main article div.article_text pre {
   font-family: 'PT Mono', monospace, Verdana, Geneva, sans-serif, "Microsoft Yahei";
   background: #eeeeee;
   line-height: 1.125em;
-  overflow-x: auto;
+  
 }
 main article div.article_text blockquote {
   margin: 22px 2px 22px 2px;
@@ -185,8 +185,8 @@ div[class='social'] a {
 	}
 /* Icons */
 .social a[href*='tumblr.com'] {background-image: url('https://bitly.com/1I1A0YE'); background-size: 30px 29px;}
-.social a[href*='weibo.com'] {background-image: url('https://bitly.com/1SIeDAE'); background-size: 30px 30px; }
-.social a[href*='mailto:'] {background-image: url('https://bitly.com/1IoURZs'); background-size: 30px 25px;}
+.social a[href*='weibo.com'] {background-image: url('http://bitly.com/1JetLBd'); background-size: 30px 30px; }
+.social a[href*='mailto:'] {background-image: url('http://bitly.com/1LuN1Aq'); background-size: 30px 25px;}
 
 .back-top { position: fixed; bottom: 100px; margin-left: 20px; }
 .back-top a {

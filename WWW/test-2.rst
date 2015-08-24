@@ -10,9 +10,11 @@
 
 人越长大，越复杂，交朋友的难度和成本都在极度上升。
 
-.. image:: https://bitly.com/1SHXRS7
-		:align: center
-		:alt: best time
-		
+.. raw:: html
+
+	<div style="background-image: url(http://bitly.com/1SHXRS7); background-repeat: no-repeat;">
+	<img alt="best time" src="http://bitly.com/1SHXRS7" style="visibility:hidden"/>
+	</div>
+
 *@lancelotly*
 :)

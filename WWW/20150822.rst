@@ -15,19 +15,15 @@
 博客应用：直接用 Raw:: html 插入。例如：下面的 Spotify 链接即直接插入，感觉有时候超方便～
 
 .. code:: ReST
-
+	:number-lines:
+	
 	.. raw:: html
-
-		<iframe src="https://embed.spotify.com/?uri=
-		spotify:track:28rZxBE8j62gTFaInWXbDZ" 
-		frameborder="0" allowtransparency="true" width="500" 
-		height="580"></iframe>
-		
+		iframe src="https://embed.spotify.com/?uri=spotify:track:28rZxBE8j62gTFaInWXbDZ"frameborder="0" allowtransparency="true"width="100%" height="100%"></iframe>
 
 嗯，这首电音感觉不错，引用之：
 
 .. raw:: html
 
-	<iframe src="https://embed.spotify.com/?uri=spotify:track:28rZxBE8j62gTFaInWXbDZ" frameborder="0" allowtransparency="true" width="500" height="580"></iframe>
+	<iframe src="https://embed.spotify.com/?uri=spotify:track:28rZxBE8j62gTFaInWXbDZ" frameborder="0" allowtransparency="true" width="100%" height="100%"></iframe>
 	
 

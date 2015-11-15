@@ -1,0 +1,25 @@
+<script async src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<script type="text/javascript">
+	function toggleDisqusComments(container){
+		if(jQuery(container).has("div").length>0){
+			jQuery(container).empty();
+			return;
+		}
+		var d = document, s = d.createElement('script');
+		s.src = 'https://lancelotly.disqus.com/embed.js';
+		s.setAttribute('data-timestamp', +new Date());
+		(d.head || d.body).appendChild(s);
+	}	
+</script>
+
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+<div id="disqus_container">
+    <div style="margin-bottom:20px" class="right"></div>
+
+        <a href="#comment-disqus" class="comment" onclick="toggleDisqusComments('#disqus_thread')">
+            <strong>Disqus</strong> Comments 请点击查看 <strong>Disqus</strong> 评论
+		<div id="disqus_thread"></div>
+		</a>
+</div>

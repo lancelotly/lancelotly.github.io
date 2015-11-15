@@ -1,0 +1,111 @@
+====================================================
+Love Card (Adobe Flash Pro CC HTML5_Canvas Project)
+====================================================
+
+:date: 2015-11-14 19:00
+:modified: 2015-11-14 19:00
+:tags: Flash, HTML5
+:category: ESSAY
+:slug: 20151114
+:author: lancelotly
+
+起初是从 FLASH 的 .SWF 做好之后开工的。因为 Flash Player 的种种安全问题，所以本打算直接将原来的 Action Script 工程文件转为 CreateJS，结果最后文件实在是太大，所以就直接分成了每个小片段了。
+
+**Flash HTML5_Canvas 在这个链接：** |Love Card| :P
+
+重新修改工程文件后生成了六个 html 包，就想着把它们组合在一起。参考了 |Two_Flash_cc_Animations| 以及 |Two animations on the same page html5 - toolkit for createjs| 的观点，反正经过了好多挣扎，更改了无数的名字，包括 Function name, event listener name…… 需要注意的是，不仅要更改主 html 文件里的变量名，同时也要更改 CreateJS 里的变量名。
+
+这是部分 HTML5_Canvas 的修改后代码：
+
+.. code:: HTML
+
+	<head>
+	...
+		<script>
+			var Lovec, stage, exportRoot, Winterc, Springc, Summerc, Fallc;
+	
+			function init() {
+				Lovec = document.getElementById("Love");
+				//imagesLovec = imagesLovec||{}; We don't need this line.
+				var loaderLovec = new createjs.LoadQueue(false);
+				loaderLovec.installPlugin(createjs.Sound);
+				loaderLovec.addEventListener("fileload", handleFileLoadLovec);
+				loaderLovec.addEventListener("complete", handleCompleteLovec);
+				loaderLovec.loadManifest(Love.properties.manifest);
+				
+				Winterc = document.getElementById("Winter");
+				var loaderWinterc = new createjs.LoadQueue(false);
+				loaderWinterc.addEventListener("fileload", handleFileLoadWinterc);
+				loaderWinterc.addEventListener("complete", handleCompleteWinterc);
+				loaderWinterc.loadManifest(Winter.properties.manifest);
+				
+				...
+			}
+			
+			function handleFileLoadLovec(evt) {
+				if (evt.item.type == "image") { imagesLovec[evt.item.id] = evt.result; }
+			}
+			
+			function handleCompleteLovec(evt) {
+				exportRoot = new Love.Love_Canvas();
+				
+				stage = new createjs.Stage(Lovec);
+				stage.addChild(exportRoot);
+				stage.update();
+				stage.enableMouseOver();
+				
+				createjs.Ticker.setFPS(Love.properties.fps);
+				createjs.Ticker.addEventListener("tick", stage);
+			}
+			
+			function playSoundLovec(id, loop) {
+				createjs.Sound.play(id, createjs.Sound.INTERRUPT_EARLY, 0, 0, loop);
+			}
+			
+			//Winterc
+			function handleFileLoadWinterc(evt) {
+				if (evt.item.type == "image") { imagesWinterc[evt.item.id] = evt.result; }
+			}
+			
+			function handleCompleteWinterc(evt) {
+				exportRoot = new Winter.Winter_Canvas();
+				
+				stage = new createjs.Stage(Winterc);
+				stage.addChild(exportRoot);
+				stage.update();
+				stage.enableMouseOver();
+				
+				createjs.Ticker.setFPS(Winter.properties.fps);
+				createjs.Ticker.addEventListener("tick", stage);
+			}
+			...
+		</script>
+	</head>
+	...
+
+需要注意其中那些被修改了的关键名：Love, Lovec, Winter, Winterc 。
+
+博客更新：优化了大部分 CSS 代码，嗯！
+
+Meow！
+
+ Lazing on a sunny afternoon!
+
+.. raw:: html
+
+	<div style="background-image: url(https://bitly.com/1WSYekb); background-repeat: no-repeat; background-size: 100%">
+	<img alt="best time" src="https://bitly.com/1WSYekb" style="visibility:hidden; width: 100%;"/>
+	</div>
+
+
+.. |Two_Flash_cc_Animations| raw:: html
+
+	<a href="https://stackoverflow.com/questions/31901564/two-flash-cc-animations-in-the-same-html-page" target="_blank">Two Flash cc Animations in the same HTML Page</a>
+   
+.. |Two animations on the same page html5 - toolkit for createjs| raw:: html
+
+	<a href="https://forums.adobe.com/thread/1195521" target="_blank">Two animations on the same page html5 - toolkit for createjs</a>
+	
+.. |Love Card| raw:: html
+
+	<a href="https://lancelot.ml/FlashCard/FlashCard.html" target="_blank">Love Card</a>

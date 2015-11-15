@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Lancelot·Sirius·ly</title><link href="https://lancelotly.ml/" rel="alternate"></link><link href="https://lancelotly.ml/feeds/all.atom.xml" rel="self"></link><id>https://lancelotly.ml/</id><updated>2015-11-14T19:00:00+08:00</updated><entry><title>Love Card (Adobe Flash Pro CC HTML5_Canvas Project)</title><link href="https://lancelotly.ml/2015/Sat%2014%20Nov%202015%2007:00:00%20PM%20MST/" rel="alternate"></link><updated>2015-11-14T19:00:00+08:00</updated><author><name>lancelotly</name></author><id>tag:lancelotly.ml,2015-11-14:2015/Sat 14 Nov 2015 07:00:00 PM MST/</id><summary type="html">&lt;p&gt;起初是从 FLASH 的 .SWF 做好之后开工的。因为 Flash Player 的种种安全问题，所以本打算直接将原来的 Action Script 工程文件转为 CreateJS，结果最后文件实在是太大，所以就直接分成了每个小片段了。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Flash HTML5_Canvas 在这个链接：&lt;/strong&gt; &lt;a href="https://lancelot.ml/FlashCard/FlashCard.html" target="_blank"&gt;Love Card&lt;/a&gt; :P&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Flash HTML5_Canvas Card 在这个链接：&lt;/strong&gt; &lt;a href="https://lancelot.ml/FlashCard/FlashCard.html" target="_blank"&gt;Love Card&lt;/a&gt; :P&lt;/p&gt;
 &lt;p&gt;重新修改工程文件后生成了六个 html 包，就想着把它们组合在一起。参考了 &lt;a href="https://stackoverflow.com/questions/31901564/two-flash-cc-animations-in-the-same-html-page" target="_blank"&gt;Two Flash cc Animations in the same HTML Page&lt;/a&gt; 以及 &lt;a href="https://forums.adobe.com/thread/1195521" target="_blank"&gt;Two animations on the same page html5 - toolkit for createjs&lt;/a&gt; 的观点，反正经过了好多挣扎，更改了无数的名字，包括 Function name, event listener name…… 需要注意的是，不仅要更改主 html 文件里的变量名，同时也要更改 CreateJS 里的变量名。&lt;/p&gt;
 &lt;p&gt;这是部分 HTML5_Canvas 的修改后代码：&lt;/p&gt;
 &lt;pre class="code HTML literal-block"&gt;
@@ -73,8 +73,8 @@
 &lt;p&gt;Meow！&lt;/p&gt;
 &lt;blockquote&gt;
 Lazing on a sunny afternoon!&lt;/blockquote&gt;
-&lt;div style="background-image: url(https://bitly.com/1WSYekb); background-repeat: no-repeat; background-size: 100%"&gt;
-&lt;img alt="best time" src="https://bitly.com/1WSYekb" style="visibility:hidden; width: 100%;"/&gt;
+&lt;div style="background-image: url(https://bitly.com/1YblGpT); background-repeat: no-repeat; background-size: 100%"&gt;
+&lt;img alt="best time" src="https://bitly.com/1YblGpT" style="visibility:hidden; width: 100%;"/&gt;
 &lt;/div&gt;</summary><category term="Flash"></category><category term="HTML5"></category></entry><entry><title>新学期</title><link href="https://lancelotly.ml/2015/Sat%2022%20Aug%202015%2009:00:00%20PM%20MST/" rel="alternate"></link><updated>2015-08-22T21:00:00+08:00</updated><author><name>lancelotly</name></author><id>tag:lancelotly.ml,2015-08-22:2015/Sat 22 Aug 2015 09:00:00 PM MST/</id><summary type="html">&lt;p&gt;开学一周啦～新学期会有新的生活开始。不一样的内容，好期待。&lt;/p&gt;
 &lt;p&gt;暑假里总算是把盗墓笔记和心理罪（雷米）全集看完了，感觉棒棒哒！有时候，这样的时光并不是会很多。还记得刚放假时候去 Chicago 好朋友那里玩的情景。一路上风景虽然非常之多，但每一处在之后的日子里细细回味，都会有更多的细节催动泪腺而激动不已。&lt;/p&gt;
 &lt;p&gt;博客应用：直接用 Raw:: html 插入。例如：下面的 Spotify 链接即直接插入，感觉有时候超方便～&lt;/p&gt;

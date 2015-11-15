@@ -81,7 +81,7 @@ main header{border-top:0}
 div[class=social] a{background-repeat:no-repeat;background-position:center-center;padding-left:2px}
 .social a[href*='tumblr.com']{background-image:url(https://bitly.com/1I1A0YE);background-size:40px 40px;background-position:center}
 .social a[href*='weibo.com']{background-image:url(https://bitly.com/1JetLBd);background-size:40px 40px;background-position:center}
-.social a[href*='mailto:']{background-image:url(https://bitly.com/1WRVtjd);background-size:25px 25px;background-position:center}
+.social a[href*='mailto:']{background-image:url(https://bitly.com/20TVylS);background-size:25px 25px;background-position:center}
 .back-top{position:fixed;bottom:10%;margin-left:1%;margin-right:1%}
 .back-top a{text-decoration:none;text-align:center;padding-top:8px;font-size:28px;width:30px;height:40px;display:block;background-color:#555;color:#fff;-webkit-transition:1s ease;-moz-transition:1s ease;-o-transition:1s ease;transition:1s ease}
 .back-top a:hover{background-color:#f1f1f1;color:#ab0103}

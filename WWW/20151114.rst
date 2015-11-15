@@ -11,7 +11,7 @@ Love Card (Adobe Flash Pro CC HTML5_Canvas Project)
 
 起初是从 FLASH 的 .SWF 做好之后开工的。因为 Flash Player 的种种安全问题，所以本打算直接将原来的 Action Script 工程文件转为 CreateJS，结果最后文件实在是太大，所以就直接分成了每个小片段了。
 
-**Flash HTML5_Canvas 在这个链接：** |Love Card| :P
+**Flash HTML5_Canvas Card 在这个链接：** |Love Card| :P
 
 重新修改工程文件后生成了六个 html 包，就想着把它们组合在一起。参考了 |Two_Flash_cc_Animations| 以及 |Two animations on the same page html5 - toolkit for createjs| 的观点，反正经过了好多挣扎，更改了无数的名字，包括 Function name, event listener name…… 需要注意的是，不仅要更改主 html 文件里的变量名，同时也要更改 CreateJS 里的变量名。
 
@@ -93,8 +93,8 @@ Meow！
 
 .. raw:: html
 
-	<div style="background-image: url(https://bitly.com/1WSYekb); background-repeat: no-repeat; background-size: 100%">
-	<img alt="best time" src="https://bitly.com/1WSYekb" style="visibility:hidden; width: 100%;"/>
+	<div style="background-image: url(https://bitly.com/1YblGpT); background-repeat: no-repeat; background-size: 100%">
+	<img alt="best time" src="https://bitly.com/1YblGpT" style="visibility:hidden; width: 100%;"/>
 	</div>
 
 

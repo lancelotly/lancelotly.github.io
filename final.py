@@ -29,5 +29,5 @@ DEFAULT_PAGINATION = 5
 THEME = 'svbhack'
 TAGLINE = """Here I'm searching the fantastic nature of our world."""
 USER_LOGO_URL = 'https://bitly.com/1TZR48Y'
-BACK_TO_TOP = 'https://bitly.com/1YabGxj'
-SUMMARY_MAX_LENGTH = 20
+BACK_TO_TOP = 'https://bitly.com/1WT9Jbi'
+SUMMARY_MAX_LENGTH = 30

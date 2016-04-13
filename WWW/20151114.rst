@@ -108,4 +108,4 @@ Meow！
 	
 .. |Love Card| raw:: html
 
-	<a href="https://lancelot.ml/FlashCard/index.html" target="_blank">Love Card</a>
+	<a href="https://lancelot.ml/flashcard/" target="_blank">Love Card</a>

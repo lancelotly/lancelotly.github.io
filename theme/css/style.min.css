@@ -79,8 +79,8 @@ main article{max-width:640px}
 main header{border-top:0}
 }
 div[class=social] a{background-repeat:no-repeat;background-position:center-center;padding-left:2px}
-.social a[href*='tumblr.com']{background-image:url(https://bitly.com/1I1A0YE);background-size:40px 40px;background-position:center}
-.social a[href*='weibo.com']{background-image:url(https://bitly.com/1JetLBd);background-size:40px 40px;background-position:center}
+.social a[href*='tumblr.com']{background-image:url(https://s-media-cache-ak0.pinimg.com/736x/a1/de/77/a1de777024c04215d3224c120575d9c8.jpg);background-size:40px 40px;background-position:center}
+.social a[href*='weibo.com']{background-image:url(https://s-media-cache-ak0.pinimg.com/736x/20/6a/1f/206a1f272c560f698495e4e097e083d1.jpg);background-size:40px 40px;background-position:center}
 .social a[href*='mailto:']{background-image:url(https://c.hime.io/images/k888.png);background-size:25px 25px;background-position:center}
 .back-top{position:fixed;bottom:10%;margin-left:1%;margin-right:1%}
 .back-top a{text-decoration:none;text-align:center;padding-top:8px;font-size:28px;width:30px;height:40px;display:block;background-color:#555;color:#fff;-webkit-transition:1s ease;-moz-transition:1s ease;-o-transition:1s ease;transition:1s ease}

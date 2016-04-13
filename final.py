@@ -1,6 +1,6 @@
 AUTHOR = 'lancelotly'
 SITENAME = u'Lancelot\xb7Sirius\xb7ly'
-SITEURL = 'https://lancelotly.ml'
+SITEURL = 'http://localhost:8000'
 
 #GOOGLE_ANALYTICS='UA-57996371-5'
 TIMEZONE = 'Asia/Shanghai'
@@ -23,11 +23,12 @@ ARTICLE_URL = "{date:%Y}/{date:%c}/"
 ARTICLE_SAVE_AS = "{date:%Y}/{date:%c}/index.html"
 
 #PLUGIN_PATHS = ['plugins']
-#PLUGINS = [u'pelican_comment_system']
+#PLUGINS = ['pelican_comment_system']
+#PELICAN_COMMENT_SYSTEM = True
 
 DEFAULT_PAGINATION = 5
 THEME = 'svbhack'
 TAGLINE = """Here I'm searching the fantastic nature of our world."""
-USER_LOGO_URL = 'https://bitly.com/1TZR48Y'
-BACK_TO_TOP = 'https://bitly.com/1WT9Jbi'
+USER_LOGO_URL = 'https://s-media-cache-ak0.pinimg.com/736x/46/63/d3/4663d34f3c4cf94a913edfa540009920.jpg'
+BACK_TO_TOP = 'https://c.hime.io/images/8ppj.gif'
 SUMMARY_MAX_LENGTH = 30

@@ -1,6 +1,6 @@
 AUTHOR = 'lancelotly'
 SITENAME = u'Lancelot\xb7Sirius\xb7ly'
-SITEURL = 'http://localhost:8000'
+SITEURL = 'https://lancelotly.ml'
 
 #GOOGLE_ANALYTICS='UA-57996371-5'
 TIMEZONE = 'Asia/Shanghai'
@@ -23,8 +23,6 @@ ARTICLE_URL = "{date:%Y}/{date:%c}/"
 ARTICLE_SAVE_AS = "{date:%Y}/{date:%c}/index.html"
 
 #PLUGIN_PATHS = ['plugins']
-#PLUGINS = ['pelican_comment_system']
-#PELICAN_COMMENT_SYSTEM = True
 
 DEFAULT_PAGINATION = 5
 THEME = 'svbhack'

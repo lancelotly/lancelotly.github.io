@@ -4,7 +4,7 @@ SITEURL = 'https://lancelotly.ml'
 
 #GOOGLE_ANALYTICS='UA-57996371-5'
 TIMEZONE = 'Asia/Shanghai'
-DEFAULT_LANG = u'zh'
+DEFAULT_LANG = u'zh-CN'
 
 SOCIAL = (('tumblr', 'http://lancelotly.tumblr.com'),
           #('github', ''),

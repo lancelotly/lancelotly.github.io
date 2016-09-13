@@ -10,9 +10,9 @@ Your browser does not support HTML5 video.
 &lt;p&gt;重新修改工程文件后生成了六个 html 包，就想着把它们组合在一起。参考了 &lt;a href="https://stackoverflow.com/questions/31901564/two-flash-cc-animations-in-the-same-html-page" target="_blank"&gt;Two Flash cc Animations in the same HTML Page&lt;/a&gt; 以及 &lt;a href="https://forums.adobe.com/thread/1195521" target="_blank"&gt;Two animations on the same page html5 - toolkit for createjs&lt;/a&gt; 的观点，反正经过了好多挣扎，更改了无数的名字，包括 Function name, event listener name…… 需要注意的是，不仅要更改主 html 文件里的变量名，同时也要更改 CreateJS 里的变量名。&lt;/p&gt;
 &lt;p&gt;这是部分 HTML5_Canvas 的修改后代码：&lt;/p&gt;
 &lt;pre class="code HTML literal-block"&gt;
-&lt;span class="nt"&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+&lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;head&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
 ...
-        &lt;span class="nt"&gt;&amp;lt;script&amp;gt;&lt;/span&gt;
+        &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;script&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
                 &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;Lovec&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;stage&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;exportRoot&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;Winterc&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;Springc&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;Summerc&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;Fallc&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 
                 &lt;span class="kd"&gt;function&lt;/span&gt; &lt;span class="nx"&gt;init&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
@@ -70,8 +70,8 @@ Your browser does not support HTML5 video.
                         &lt;span class="nx"&gt;createjs&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;Ticker&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;addEventListener&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;tick&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;stage&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
                 &lt;span class="p"&gt;}&lt;/span&gt;
                 &lt;span class="p"&gt;...&lt;/span&gt;
-        &lt;span class="nt"&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
-&lt;span class="nt"&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+        &lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;script&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;head&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
 ...
 &lt;/pre&gt;
 &lt;p&gt;需要注意其中那些被修改了的关键名：Love, Lovec, Winter, Winterc 。&lt;/p&gt;

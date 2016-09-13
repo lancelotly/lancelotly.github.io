@@ -71,9 +71,9 @@
 <p>重新修改工程文件后生成了六个 html 包，就想着把它们组合在一起。参考了 <a href="https://stackoverflow.com/questions/31901564/two-flash-cc-animations-in-the-same-html-page" target="_blank">Two Flash cc Animations in the same HTML Page</a> 以及 <a href="https://forums.adobe.com/thread/1195521" target="_blank">Two animations on the same page html5 - toolkit for createjs</a> 的观点，反正经过了好多挣扎，更改了无数的名字，包括 Function name, event listener name…… 需要注意的是，不仅要更改主 html 文件里的变量名，同时也要更改 CreateJS 里的变量名。</p>
 <p>这是部分 HTML5_Canvas 的修改后代码：</p>
 <pre class="code HTML literal-block">
-<span class="nt">&lt;head&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
 ...
-        <span class="nt">&lt;script&gt;</span>
+        <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
                 <span class="kd">var</span> <span class="nx">Lovec</span><span class="p">,</span> <span class="nx">stage</span><span class="p">,</span> <span class="nx">exportRoot</span><span class="p">,</span> <span class="nx">Winterc</span><span class="p">,</span> <span class="nx">Springc</span><span class="p">,</span> <span class="nx">Summerc</span><span class="p">,</span> <span class="nx">Fallc</span><span class="p">;</span>
 
                 <span class="kd">function</span> <span class="nx">init</span><span class="p">()</span> <span class="p">{</span>
@@ -131,8 +131,8 @@
                         <span class="nx">createjs</span><span class="p">.</span><span class="nx">Ticker</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;tick&quot;</span><span class="p">,</span> <span class="nx">stage</span><span class="p">);</span>
                 <span class="p">}</span>
                 <span class="p">...</span>
-        <span class="nt">&lt;/script&gt;</span>
-<span class="nt">&lt;/head&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
 ...
 </pre>
 <p>需要注意其中那些被修改了的关键名：Love, Lovec, Winter, Winterc 。</p>

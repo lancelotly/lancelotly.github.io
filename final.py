@@ -27,6 +27,6 @@ ARTICLE_SAVE_AS = "{date:%Y}/{date:%c}/index.html"
 DEFAULT_PAGINATION = 5
 THEME = 'svbhack'
 TAGLINE = """Here I'm searching the fantastic nature of our world."""
-USER_LOGO_URL = 'https://s-media-cache-ak0.pinimg.com/736x/46/63/d3/4663d34f3c4cf94a913edfa540009920.jpg'
+USER_LOGO_URL = 'https://en.gravatar.com/userimage/59823780/a88754e1f34e09bac8a82ffd9cb2f504.jpeg'
 BACK_TO_TOP = 'https://c.hime.io/images/8ppj.gif'
 SUMMARY_MAX_LENGTH = 30

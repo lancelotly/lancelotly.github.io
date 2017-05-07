@@ -6,7 +6,7 @@ Love Card (Adobe Flash Pro CC HTML5_Canvas Project)
 :modified: 2015-11-14 19:00
 :tags: Flash, HTML5
 :category: ESSAY
-:slug: 20151114
+:slug: 20151114-Adobe Flash
 :author: lancelotly
 
 起初是从 FLASH 的 .SWF 做好之后开工的。因为 Flash Player 的种种安全问题，所以本打算直接将原来的 Action Script 工程文件转为 CreateJS，结果最后文件实在是太大，所以就直接分成了每个小片段了。

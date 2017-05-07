@@ -19,8 +19,8 @@ FEED_ATOM = 'feed/atom/index.html'
 
 #DEFAULT_DATE_FORMAT = ('%d/%b/%Y %a')
 
-ARTICLE_URL = "{date:%Y}/{date:%c}/"
-ARTICLE_SAVE_AS = "{date:%Y}/{date:%c}/index.html"
+ARTICLE_URL = "posts/{date:%Y}/{date:%b}/{date:%d}/{slug}/"
+ARTICLE_SAVE_AS = "posts/{date:%Y}/{date:%b}/{date:%d}/{slug}/index.html"
 
 #PLUGIN_PATHS = ['plugins']
 

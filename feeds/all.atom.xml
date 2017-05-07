@@ -65,6 +65,13 @@ sudo mkdir /media/drive
 &lt;/pre&gt;&lt;/div&gt;
 
 
+&lt;p&gt;{% codeblock lang:shell linenos:true %}&lt;/p&gt;
+&lt;h1&gt;!/bin/bash&lt;/h1&gt;
+&lt;p _="%" endcodeblock&gt;echo "Preparing for mounting disk..."
+sudo dislocker-fuse -v -V /dev/disk/by-partuuid/00000000-00 -u -- /media/dislocker-container
+echo "Loading...."
+sudo mount -o loop /media/dislocker-container/dislocker-file drive
+echo "Done!"&lt;/p&gt;
 &lt;p&gt;That's it! We just type (or double click to choose run-in-terminal):&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;./start.sh&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;Also, the un-mount shell script:&lt;/p&gt;

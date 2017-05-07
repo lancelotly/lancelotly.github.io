@@ -124,24 +124,22 @@ sudo mkdir /media/drive
 <p>/dev/sdb1: PARTUUID="00000000-00"</p>
 </blockquote>
 <p>Then we write the .sh script:</p>
-<p>```shell?line_numbers=true</p>
-<h1>!/bin/bash</h1>
-<p>echo "Preparing for mounting disk..."
-sudo dislocker-fuse -v -V /dev/disk/by-partuuid/00000000-00 -u -- /media/dislocker-container
-echo "Loading...."
-sudo mount -o loop /media/dislocker-container/dislocker-file drive
-echo "Done!"</p>
-<div class="highlight"><pre><span></span>That&#39;s it! We just type (or double click to choose run-in-terminal):
+<div class="highlight"><pre><span></span>    <span class="c1">#!/bin/bash</span>
+    <span class="nb">echo</span> <span class="s2">&quot;Preparing for mounting disk...&quot;</span>
+    sudo dislocker-fuse -v -V /dev/disk/by-partuuid/00000000-00 -u -- /media/dislocker-container
+    <span class="nb">echo</span> <span class="s2">&quot;Loading....&quot;</span>
+    sudo mount -o loop /media/dislocker-container/dislocker-file drive
+    <span class="nb">echo</span> <span class="s2">&quot;Done!&quot;</span>
+</pre></div>
 
-`./start.sh`
 
-Also, the un-mount shell script:
-
-```shell
-#!/bin/bash
-echo &quot;Preparing for unmounting disk...&quot;
-sudo umount drive &amp;&amp; sudo umount dislocker-container
-echo &quot;Done!&quot;
+<p>That's it! We just type (or double click to choose run-in-terminal):</p>
+<p><code>./start.sh</code></p>
+<p>Also, the un-mount shell script:</p>
+<div class="highlight"><pre><span></span>    <span class="c1">#!/bin/bash</span>
+    <span class="nb">echo</span> <span class="s2">&quot;Preparing for unmounting disk...&quot;</span>
+    sudo umount drive <span class="o">&amp;&amp;</span> sudo umount dislocker-container
+    <span class="nb">echo</span> <span class="s2">&quot;Done!&quot;</span>
 </pre></div>
 
 

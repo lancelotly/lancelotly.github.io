@@ -56,22 +56,22 @@ sudo mkdir /media/drive
 &lt;p&gt;/dev/sdb1: PARTUUID="00000000-00"&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Then we write the .sh script:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;    &lt;span class="c1"&gt;#!/bin/bash&lt;/span&gt;
-    &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Preparing for mounting disk...&amp;quot;&lt;/span&gt;
-    sudo dislocker-fuse -v -V /dev/disk/by-partuuid/00000000-00 -u -- /media/dislocker-container
-    &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Loading....&amp;quot;&lt;/span&gt;
-    sudo mount -o loop /media/dislocker-container/dislocker-file drive
-    &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Done!&amp;quot;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="ch"&gt;#!/bin/bash&lt;/span&gt;
+&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Preparing for mounting disk...&amp;quot;&lt;/span&gt;
+sudo dislocker-fuse -v -V /dev/disk/by-partuuid/00000000-00 -u -- /media/dislocker-container
+&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Loading....&amp;quot;&lt;/span&gt;
+sudo mount -o loop /media/dislocker-container/dislocker-file drive
+&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Done!&amp;quot;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;That's it! We just type (or double click to choose run-in-terminal):&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;./start.sh&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;Also, the un-mount shell script:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;    &lt;span class="c1"&gt;#!/bin/bash&lt;/span&gt;
-    &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Preparing for unmounting disk...&amp;quot;&lt;/span&gt;
-    sudo umount drive &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo umount dislocker-container
-    &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Done!&amp;quot;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="ch"&gt;#!/bin/bash&lt;/span&gt;
+&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Preparing for unmounting disk...&amp;quot;&lt;/span&gt;
+sudo umount drive &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo umount dislocker-container
+&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Done!&amp;quot;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;</content><category term="Ubuntu"></category></entry><entry><title>推荐 TheFatRat 的 Monody</title><link href="https://lancelotly.ml/2016/Sat%2008%20Oct%202016%2009:00:00%20PM%20MST/" rel="alternate"></link><published>2016-10-08T21:00:00+08:00</published><updated>2016-10-08T21:00:00+08:00</updated><author><name>lancelotly</name></author><id>tag:lancelotly.ml,2016-10-08:/2016/Sat 08 Oct 2016 09:00:00 PM MST/</id><summary type="html"></summary><content type="html">&lt;p&gt;编辑语言更新&lt;/p&gt;
 &lt;p&gt;换到用 Markdown 进行编辑啦！&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;    &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;dl&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;

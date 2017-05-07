@@ -18,7 +18,6 @@ Love Card (Adobe Flash Pro CC HTML5_Canvas Project)
 这是部分 HTML5_Canvas 的修改后代码：
 
 .. code:: HTML
-   :linenos:
 
 	<head>
 	...

@@ -133,22 +133,6 @@ sudo mkdir /media/drive
 </pre></div>
 
 
-<p>{% codeblock lang:shell linenos:true %}</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3
-4
-5
-6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="ch">#!/bin/bash</span>
-<span class="nb">echo</span> <span class="s2">&quot;Preparing for mounting disk...&quot;</span>
-sudo dislocker-fuse -v -V /dev/disk/by-partuuid/00000000-00 -u -- /media/dislocker-container
-<span class="nb">echo</span> <span class="s2">&quot;Loading....&quot;</span>
-sudo mount -o loop /media/dislocker-container/dislocker-file drive
-<span class="nb">echo</span> <span class="s2">&quot;Done!&quot;</span>
-</pre></div>
-</td></tr></table>
-
-<p>{% endcodeblock %}</p>
 <p>That's it! We just type (or double click to choose run-in-terminal):</p>
 <p><code>./start.sh</code></p>
 <p>Also, the un-mount shell script:</p>
@@ -157,9 +141,6 @@ sudo mount -o loop /media/dislocker-container/dislocker-file drive
     sudo umount drive <span class="o">&amp;&amp;</span> sudo umount dislocker-container
     <span class="nb">echo</span> <span class="s2">&quot;Done!&quot;</span>
 </pre></div>
-
-
-<p>&#x1F411;</p>
   </div>
   <div class="article_meta">
     <p>Posted on: Sat 06 May 2017</p>

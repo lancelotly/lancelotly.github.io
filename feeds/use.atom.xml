@@ -65,22 +65,6 @@ sudo mkdir /media/drive
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;{% codeblock lang:shell linenos:true %}&lt;/p&gt;
-&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1
-2
-3
-4
-5
-6&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="ch"&gt;#!/bin/bash&lt;/span&gt;
-&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Preparing for mounting disk...&amp;quot;&lt;/span&gt;
-sudo dislocker-fuse -v -V /dev/disk/by-partuuid/00000000-00 -u -- /media/dislocker-container
-&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Loading....&amp;quot;&lt;/span&gt;
-sudo mount -o loop /media/dislocker-container/dislocker-file drive
-&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Done!&amp;quot;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-
-&lt;p&gt;{% endcodeblock %}&lt;/p&gt;
 &lt;p&gt;That's it! We just type (or double click to choose run-in-terminal):&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;./start.sh&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;Also, the un-mount shell script:&lt;/p&gt;
@@ -88,7 +72,4 @@ sudo mount -o loop /media/dislocker-container/dislocker-file drive
     &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Preparing for unmounting disk...&amp;quot;&lt;/span&gt;
     sudo umount drive &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo umount dislocker-container
     &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Done!&amp;quot;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;&amp;#x1F411;&lt;/p&gt;</content><category term="Ubuntu"></category></entry></feed>
+&lt;/pre&gt;&lt;/div&gt;</content><category term="Ubuntu"></category></entry></feed>

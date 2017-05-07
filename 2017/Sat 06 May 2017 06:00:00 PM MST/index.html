@@ -19,7 +19,7 @@
 
   <title>
     Lancelot·Sirius·ly
-&ndash; Using Dislocker on Ubuntu to Mount BitLocker Disks  </title>
+&ndash; Using Dislocker on Ubuntu to Mount BitLocker Disks - 在 Ubuntu 上怎样用 Dislocker 去使用 BitLocker 加密的U盘和硬盘  </title>
 	<!--<script>
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -64,32 +64,31 @@
 
 <article>
   <div class="article_title">
-    <h3><a href="https://lancelotly.ml/2017/Sat 06 May 2017 06:00:00 PM MST/">Using Dislocker on Ubuntu to Mount BitLocker Disks</a></h3>
+    <h3><a href="https://lancelotly.ml/2017/Sat 06 May 2017 06:00:00 PM MST/">Using Dislocker on Ubuntu to Mount BitLocker Disks - 在 Ubuntu 上怎样用 Dislocker 去使用 BitLocker 加密的U盘和硬盘</a></h3>
   </div>
   <div class="article_text">
     <p>After I encrypted my USB stick with <a href="https://docs.microsoft.com/en-us/windows/device-security/bitlocker/bitlocker-overview">Microsoft's BitLocker</a>, I found that I need to find a solution to make it work in my Ubuntu system either. The best way to solve this problem so far is using <a href="https://github.com/Aorimn/dislocker">Dislocker</a> by Aorimn. </p>
 <p>As said in the description:</p>
 <blockquote>
 <p>This software has been designed to read BitLocker encrypted partitions under a Linux system.</p>
-<p>The driver has the capability to read/write on:
-- Windows Vista, 7, 8, 8.1 and 10 encrypted partitions - that's AES-CBC, AES-XTS, 128 or 256 bits, with or without the Elephant diffuser, encrypted partitions;</p>
+<p>The driver has the capability to read/write on:</p>
+<ul>
+<li>Windows Vista, 7, 8, 8.1 and 10 encrypted partitions - that's AES-CBC, AES-XTS, 128 or 256 bits, with or without the Elephant diffuser, encrypted partitions;</li>
+</ul>
 </blockquote>
 <h2>Install</h2>
 <p>It is easy to install Dislocker on Ubuntu.</p>
-<p>Get the source code:
-<code>git clone https://github.com/Aorimn/dislocker.git</code>
-or unzip one from the release <a href="https://github.com/Aorimn/dislocker/releases">https://github.com/Aorimn/dislocker/releases</a>.</p>
-<p>Since I am on Ubuntu 17.04 now, I need the dependencies include:
-<code>sudo apt install gcc cmake make libfuse-dev libmbedtls-dev ruby-dev</code></p>
+<p>Get the source code:</p>
+<p><code>git clone https://github.com/Aorimn/dislocker.git</code></p>
+<p>or unzip one from the release <a href="https://github.com/Aorimn/dislocker/releases">https://github.com/Aorimn/dislocker/releases</a>.</p>
+<p>Since I am on Ubuntu 17.04 now, I need the dependencies include:</p>
+<p><code>sudo apt install gcc cmake make libfuse-dev libmbedtls-dev ruby-dev</code></p>
 <p>Then just follow the <a href="https://github.com/Aorimn/dislocker/blob/master/INSTALL.md">INSTALL.md</a> for making and installing.</p>
-<div class="highlight"><pre><span></span>cmake .
-make
-sudo make install
-</pre></div>
-
-
-<p>To uninstall:
-<code>sudo make uninstall</code></p>
+<p><code>cmake .</code></p>
+<p><code>make</code></p>
+<p><code>sudo make install</code></p>
+<p>To uninstall:</p>
+<p><code>sudo make uninstall</code></p>
 <p>We will have the latest version in this way. Otherwise, we can also install (an old version) from Ubuntu Software Center.</p>
 <h2>Mounting</h2>
 <p>To mount a BitLocker drive we need two folders which are used as Dislocker container and drive files mount point.</p>
@@ -99,46 +98,46 @@ sudo mkdir /media/drive
 </pre></div>
 
 
-<p>After this preparation, we need to get the path of the drive:
-<code>sudo fdisk -l</code></p>
+<p>After this preparation, we need to get the path of the drive:</p>
+<p><code>sudo fdisk -l</code></p>
 <p>we keep the drive path, the "x" here represent the drive we need: </p>
 <blockquote>
 <p>/dev/sdx:....</p>
 </blockquote>
-<p>Then we mount the dislocker-contaner:
-<code>dislocker-fuse -v -V /dev/sdx -u -- /media/dislocker-container</code>
--u here let us type in the BitLocker password.</p>
-<p>Then we mount the files:
-<code>sudo mount -o loop /media/dislocker-container/dislocker-file /media/drive</code></p>
+<p>Then we mount the dislocker-contaner:</p>
+<p><code>dislocker-fuse -v -V /dev/sdx -u -- /media/dislocker-container</code></p>
+<p>-u here let us type in the BitLocker password.</p>
+<p>Then we mount the files:</p>
+<p><code>sudo mount -o loop /media/dislocker-container/dislocker-file /media/drive</code></p>
 <p>Now we can access the BitLocker drive at /media/drive.</p>
-<p>To unmount the drive:
-<code>sudo umount drive &amp;&amp; sudo umount dislocker-container</code></p>
+<p>To unmount the drive:</p>
+<p><code>sudo umount drive &amp;&amp; sudo umount dislocker-container</code></p>
 <p>I faced can not write to the drive in GNU Files but not through Terminal at the beginning. It was self-fixed after reboot.</p>
 <h2>Shell file</h2>
 <p>We have to run such two lines every time. It seems not good. So, I write a .sh shell script for mounting with a single run. </p>
-<p>First, we need to find the UUID (or part-UUID) of the USB stick to get rid of searching for a changeable drive name in /dev/sdx. We use "blkid" command:
-<code>sudo blkid</code></p>
+<p>First, we need to find the UUID (or part-UUID) of the USB stick to get rid of searching for a changeable drive name in /dev/sdx. We use "blkid" command:</p>
+<p><code>sudo blkid</code></p>
 <p>I have my USB stick:</p>
 <blockquote>
 <p>/dev/sdb1: PARTUUID="00000000-00"</p>
 </blockquote>
-<p>Then we write the .sh script:
-```shell=</p>
-<h1>!/bin/bash</h1>
-<p>echo "Preparing for mounting disk..."
+<p>Then we write the .sh script:</p>
+<div class="highlight"><pre><span></span><span class="ch">#!/bin/bash</span>
+<span class="nb">echo</span> <span class="s2">&quot;Preparing for mounting disk...&quot;</span>
 sudo dislocker-fuse -v -V /dev/disk/by-partuuid/00000000-00 -u -- /media/dislocker-container
-echo "Loading...."
+<span class="nb">echo</span> <span class="s2">&quot;Loading....&quot;</span>
 sudo mount -o loop /media/dislocker-container/dislocker-file drive
-echo "Done!"</p>
-<div class="highlight"><pre><span></span>That&#39;s it! We just type (or double click to choose run-in-terminal):
-`./start.sh`
+<span class="nb">echo</span> <span class="s2">&quot;Done!&quot;</span>
+</pre></div>
 
-Also, the un-mount shell script:
-```shell=
-#!/bin/bash
-echo &quot;Preparing for unmounting disk...&quot;
-sudo umount drive &amp;&amp; sudo umount dislocker-container
-echo &quot;Done!&quot;
+
+<p>That's it! We just type (or double click to choose run-in-terminal):</p>
+<p><code>./start.sh</code></p>
+<p>Also, the un-mount shell script:</p>
+<div class="highlight"><pre><span></span><span class="ch">#!/bin/bash</span>
+<span class="nb">echo</span> <span class="s2">&quot;Preparing for unmounting disk...&quot;</span>
+sudo umount drive <span class="o">&amp;&amp;</span> sudo umount dislocker-container
+<span class="nb">echo</span> <span class="s2">&quot;Done!&quot;</span>
 </pre></div>
 
 
@@ -146,7 +145,7 @@ echo &quot;Done!&quot;
   </div>
   <div class="article_meta">
     <p>Posted on: Sat 06 May 2017</p>
-    <p>Category: <a href="https://lancelotly.ml/category/usability.html">Usability</a>
+    <p>Category: <a href="https://lancelotly.ml/category/use.html">use</a>
  &ndash; Tags:
       <a href="https://lancelotly.ml/tag/ubuntu.html">Ubuntu</a>    </p>
   </div>

@@ -28,5 +28,5 @@ DEFAULT_PAGINATION = 5
 THEME = 'svbhack'
 TAGLINE = """Here I'm searching the fantastic nature of our world."""
 USER_LOGO_URL = 'https://en.gravatar.com/userimage/59823780/a88754e1f34e09bac8a82ffd9cb2f504.jpeg'
-BACK_TO_TOP = 'https://c.hime.io/images/8ppj.gif'
+BACK_TO_TOP = 'https://gitlab.com/lancelotly/blog_resources/raw/master/img/xklzhuanquan_org.gif'
 SUMMARY_MAX_LENGTH = 30

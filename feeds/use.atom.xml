@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Lancelot·Sirius·ly - use</title><link href="https://lancelotly.ml/" rel="alternate"></link><link href="https://lancelotly.ml/feeds/use.atom.xml" rel="self"></link><id>https://lancelotly.ml/</id><updated>2017-05-06T18:00:00+08:00</updated><entry><title>Using Dislocker on Ubuntu to Mount BitLocker Disks</title><link href="https://lancelotly.ml/posts/2017/May/06/20170506-dislocker/" rel="alternate"></link><published>2017-05-06T18:00:00+08:00</published><updated>2017-05-06T18:00:00+08:00</updated><author><name>lancelotly</name></author><id>tag:lancelotly.ml,2017-05-06:/posts/2017/May/06/20170506-dislocker/</id><summary type="html">&lt;p&gt;在 Ubuntu 上怎样用 Dislocker 去使用 BitLocker 加密的U盘和硬盘&lt;/p&gt;</summary><content type="html">&lt;p&gt;After I encrypted my USB stick with &lt;a href="https://docs.microsoft.com/en-us/windows/device-security/bitlocker/bitlocker-overview"&gt;Microsoft's BitLocker&lt;/a&gt;, I found that I need to find a solution to make it work in my Ubuntu system either. The best way to solve this problem so far is using &lt;a href="https://github.com/Aorimn/dislocker"&gt;Dislocker&lt;/a&gt; by Aorimn. &lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Lancelot·Sirius·ly - use</title><link href="https://lancelotly.github.io/" rel="alternate"></link><link href="https://lancelotly.github.io/feeds/use.atom.xml" rel="self"></link><id>https://lancelotly.github.io/</id><updated>2017-05-06T18:00:00+08:00</updated><entry><title>Using Dislocker on Ubuntu to Mount BitLocker Disks</title><link href="https://lancelotly.github.io/posts/2017/May/06/20170506-dislocker/" rel="alternate"></link><published>2017-05-06T18:00:00+08:00</published><updated>2017-05-06T18:00:00+08:00</updated><author><name>lancelotly</name></author><id>tag:lancelotly.github.io,2017-05-06:/posts/2017/May/06/20170506-dislocker/</id><summary type="html">&lt;p&gt;在 Ubuntu 上怎样用 Dislocker 去使用 BitLocker 加密的U盘和硬盘&lt;/p&gt;</summary><content type="html">&lt;p&gt;After I encrypted my USB stick with &lt;a href="https://docs.microsoft.com/en-us/windows/device-security/bitlocker/bitlocker-overview"&gt;Microsoft's BitLocker&lt;/a&gt;, I found that I need to find a solution to make it work in my Ubuntu system either. The best way to solve this problem so far is using &lt;a href="https://github.com/Aorimn/dislocker"&gt;Dislocker&lt;/a&gt; by Aorimn. &lt;/p&gt;
 &lt;p&gt;As said in the description:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;This software has been designed to read BitLocker encrypted partitions under a Linux system.&lt;/p&gt;
@@ -15,11 +15,10 @@
 &lt;p&gt;Since I am on Ubuntu 17.04 now, I need the dependencies include:&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;sudo apt install gcc cmake make libfuse-dev libmbedtls-dev ruby-dev&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;Then just follow the &lt;a href="https://github.com/Aorimn/dislocker/blob/master/INSTALL.md"&gt;INSTALL.md&lt;/a&gt; for making and installing.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;cmake .
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;cmake .
 make
 sudo make install
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;To uninstall:&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;sudo make uninstall&lt;/code&gt;&lt;/p&gt;
@@ -27,10 +26,9 @@ sudo make install
 &lt;h2&gt;Mounting&lt;/h2&gt;
 &lt;p&gt;To mount a BitLocker drive we need two folders which are used as Dislocker container and drive files mount point.&lt;/p&gt;
 &lt;p&gt;So we need to have two folders (either on /media or /home; and the names we like. here I use "dislocker-container" and "drive" at /media as an example):&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo mkdir /media/dislocker-container
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo mkdir /media/dislocker-container
 sudo mkdir /media/drive
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;After this preparation, we need to get the path of the drive:&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;sudo fdisk -l&lt;/code&gt;&lt;/p&gt;
@@ -56,23 +54,21 @@ sudo mkdir /media/drive
 &lt;p&gt;/dev/sdb1: PARTUUID="00000000-00"&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Then we write the .sh script:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="ch"&gt;#!/bin/bash&lt;/span&gt;
-&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Preparing for mounting disk...&amp;quot;&lt;/span&gt;
-sudo dislocker-fuse -v -V /dev/disk/by-partuuid/00000000-00 -u -- /media/dislocker-container
-&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Loading....&amp;quot;&lt;/span&gt;
-sudo mount -o loop /media/dislocker-container/dislocker-file drive
-&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Done!&amp;quot;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="ch"&gt;#!/bin/bash&lt;/span&gt;
+&lt;span class="nb"&gt;echo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Preparing for mounting disk...&amp;quot;&lt;/span&gt;
+sudo&lt;span class="w"&gt; &lt;/span&gt;dislocker-fuse&lt;span class="w"&gt; &lt;/span&gt;-v&lt;span class="w"&gt; &lt;/span&gt;-V&lt;span class="w"&gt; &lt;/span&gt;/dev/disk/by-partuuid/00000000-00&lt;span class="w"&gt; &lt;/span&gt;-u&lt;span class="w"&gt; &lt;/span&gt;--&lt;span class="w"&gt; &lt;/span&gt;/media/dislocker-container
+&lt;span class="nb"&gt;echo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Loading....&amp;quot;&lt;/span&gt;
+sudo&lt;span class="w"&gt; &lt;/span&gt;mount&lt;span class="w"&gt; &lt;/span&gt;-o&lt;span class="w"&gt; &lt;/span&gt;loop&lt;span class="w"&gt; &lt;/span&gt;/media/dislocker-container/dislocker-file&lt;span class="w"&gt; &lt;/span&gt;drive
+&lt;span class="nb"&gt;echo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Done!&amp;quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;That's it! We just type (or double click to choose run-in-terminal):&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;./start.sh&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;Also, the un-mount shell script:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="ch"&gt;#!/bin/bash&lt;/span&gt;
-&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Preparing for unmounting disk...&amp;quot;&lt;/span&gt;
-sudo umount drive &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo umount dislocker-container
-&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Done!&amp;quot;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="ch"&gt;#!/bin/bash&lt;/span&gt;
+&lt;span class="nb"&gt;echo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Preparing for unmounting disk...&amp;quot;&lt;/span&gt;
+sudo&lt;span class="w"&gt; &lt;/span&gt;umount&lt;span class="w"&gt; &lt;/span&gt;drive&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;sudo&lt;span class="w"&gt; &lt;/span&gt;umount&lt;span class="w"&gt; &lt;/span&gt;dislocker-container
+&lt;span class="nb"&gt;echo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Done!&amp;quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-
-&lt;p&gt;(在 Ubuntu 上怎样用 Dislocker 去使用 BitLocker 加密的U盘和硬盘 - lancelotly)&lt;/p&gt;</content><category term="Ubuntu"></category></entry></feed>
+&lt;p&gt;(在 Ubuntu 上怎样用 Dislocker 去使用 BitLocker 加密的U盘和硬盘 - lancelotly)&lt;/p&gt;</content><category term="use"></category><category term="Ubuntu"></category></entry></feed>
